@@ -160,6 +160,9 @@ cd /home/manager/Module_2_Linux_scripting
 # List the contents of a directory
 $ ls
 
+##What is the error that occurred?
+$ LS
+
 # List the contents of a directory with extra information about the files
 $ ls –l
 
@@ -227,9 +230,18 @@ $ ls –ltr
 
 ```bash
 # To find out where you are, type this into your terminal.
+
 $ pwd
 
 $ cd basic
+
+$ pwd
+
+#What is the error that occurred?
+
+$ ../ 
+
+$ cd ../
 
 $ pwd
 
@@ -273,24 +285,28 @@ $ ls -lrt
 
 ```bash
 # List contents of current directory
-ls .
+$ ls .
 
 # List the contents of directory above your current location
-ls ..
+$ ls ..
 
 # list the contents of the home directory
-ls ~
+$ ls ~
 
 # similarly, we can move up and down the directory structure using the shortcuts. 
 # For example, try the following, using "pwd" or "ls -lrt" after each command to see where you are:
 
-cd genome_1/ 
+$ cd genome_1/
 
-cd ../genome_2/
+##What is the error that occurred?
 
-cd
+$ cd genome_2/
 
-cd /home/manager/Module_2_Linux_scripting
+$ cd ../genome_2/
+
+$ cd
+
+$ cd /home/manager/Module_2_Linux_scripting
 
 ```
 - we have subtly introduced you to a new concept of moving around between your directories - **"absolute" and "relative" paths.** 
@@ -338,6 +354,11 @@ cd /home/manager/Module_2_Linux_scripting
 # To copy the file genome_1.gff to a new file called genome_1.withseq use:
 $ cp genome_1.gff genome_1.withseq.gff
 
+##What is the error that occurred?
+$ cp genome_1.withseq.gff
+
+$ cp genome_1.withseq.gff genome_2.withseq.gff
+
 # Use ls to check the contents of the current directory for the copied file:
 $ ls -lrt
 ```
@@ -366,6 +387,13 @@ $ ls –lrt ../
 # you could also change directory to check the file moved
 $ cd ../
 $ ls -lrt
+
+# To change the name of a file, use the mv command. 
+$ mv genome_2.withseq.gff genome_2.gff
+
+$ ls -lrt
+
+
 ```
 ---
 
